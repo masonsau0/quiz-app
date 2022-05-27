@@ -11,7 +11,53 @@ If you set box-sizing: border-box; on an element, padding and border are include
 body {
     background-image: url(./images/cat-background.jpg);
     background-size: cover;
-    background-position: center 30%;
+    background-position: center 70%;     /* The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
     margin: 0;
+    min-height: 100vh;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #353636;
+    color: white;
+    width: 600px;
+    height: 400px;
+    justify-content: space-between;     /* keeps button at bottom of container */
+    max-width: 100%; /* width can be anywhere between 0% and 100% but no more then 100% */
+    border-radius: 10px;     /* creates round edges around border */
+    box-shadow: 0 0 10px 5px #3d85c6;     /* creates a shadow effect around box */
+}
+
+.quiz-header {
+    padding: 2rem;
+}
+
+ul {
+    list-style-type: none;     /* removes bullet points from list items */
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;     /* removes the button border */
+    font-family: inherit;     /* uses the body's font family */
+    font-size: 1.3rem;
+    background-color: #3d85c6;
+    color: white;
+    width: 100%;     /* stretches button to 100% of available width */
+    padding: 1.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button:hover {
+    background-color: #3571a6;     /* change background color when mouse cursor hovers over button */
 }
