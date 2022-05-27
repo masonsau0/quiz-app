@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');     /* imports custom font */
+
+/* 
+The box-sizing property allows us to include the padding and border in an element's total width and height.
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height:
+*/
+* {
+    box-sizing: border-box;     
+}
+
+body {
+    background-image: url(./images/cat-background.jpg);
+    background-size: cover;
+    background-position: center 30%;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
