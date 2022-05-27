@@ -10,13 +10,28 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h2>Question text</h2>
+        <div class="quiz-header">
+            <h2>Question text</h2>
         <ul>
-            <li><input type="radio" id="a" ><label for="a">Question</label></li>     <!-- radio creates a clickable circle next to the list item -->
-            <li><input type="radio" id="b"><label for="b">Question</label></li>
-            <li><input type="radio" id="c"><label for="c">Question</label></li>
-            <li><input type="radio" id="d"><label for="d">Question</label></li>
+            <li>
+                <input type="radio" id="a" >     <!-- radio creates a clickable circle next to the list item -->
+                <label for="a">Question</label>
+            </li>     
+            <li>
+                <input type="radio" id="b">
+                <label for="b">Question</label>      <!-- The <label> tag defines a label for several elements: -->
+            </li>     
+            <li>
+                <input type="radio" id="c">
+                <label for="c">Question</label>     <!-- 'for' designates which form element a label is describing.-->
+            </li>     
+            <li>
+                <input type="radio" id="d">
+                <label for="d">Question</label>      <!-- 'for'creates a bigger clickable space -->
+            </li>     
         </ul>
+        </div>
+        
         <button>Submit</button>
     </div>
 </body>
