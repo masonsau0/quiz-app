@@ -11,28 +11,28 @@
 <body>
     <div class="quiz-container">
         <div class="quiz-header">
-            <h2>Question text</h2>
+            <h2  id="question">Question text</h2>
         <ul>
             <li>
                 <input type="radio" id="a" name="answer">     <!-- radio creates a clickable circle next to the list item -->
-                <label for="a">Question</label>
+                <label id="a_text" for="a">Question</label>
             </li>     
             <li>
                 <input type="radio" id="b" name="answer">     <!-- The name attribute specifies the name of an <input> element. | The name attribute is used to reference elements in a JavaScript -->
-                <label for="b">Question</label>      <!-- The <label> tag defines a label for several elements: -->
+                <label id="b_text" for="b">Question</label>      <!-- The <label> tag defines a label for several elements: -->
             </li>     
             <li>
                 <input type="radio" id="c" name="answer">     <!-- The name is used by the browser to set "groups" of radio buttons, only one radio button in each group can be selected -->
-                <label for="c">Question</label>     <!-- 'for' designates which form element a label is describing.-->
+                <label id="c_text" for="c">Question</label>     <!-- 'for' designates which form element a label is describing.-->
             </li>     
             <li>
                 <input type="radio" id="d" name="answer">
-                <label for="d">Question</label>      <!-- 'for'creates a bigger clickable space -->
+                <label id="d_text" for="d">Question</label>      <!-- 'for'creates a bigger clickable space -->
             </li>     
         </ul>
         </div>
+        <button id="submit">Submit</button>
         
-        <button>Submit</button>
     </div>
 </body>
 </html>
