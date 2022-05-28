@@ -41,4 +41,29 @@ const quizData = [
         d: '256',
         correct: 'b'
     },
-]
+];
+
+const questionEl = document.getElementById ('question');
+const  a_text = document.getElementById('a_text');
+const  b_text = document.getElementById('b_text');
+const  c_text = document.getElementById('c_text');
+const  d_text = document.getElementById('d_text');
+const submitButton = document.getElementById('submit');
+
+let currentQuestion = 0;
+
+loadQuiz();
+
+function loadQuiz() {
+    const currentQuizData = quizData[currentQuestion]     // assigns currentQuizData with the 0 index element of the quizData array
+    questionEl.innerText = currentQuizData.question;     // gets the value of 'question:' in the 0 index element and displays it
+    a_text.innerText = currentQuizData.a;     // gets the value of 'a:' in the 0 index element and displays it
+    b_text.innerText = currentQuizData.b;    
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+}
+
+submitButton.addEventListener('click', () => {     // function runs when submit button is clicked
+    currentQuestion++;     // increases the value of currentQuestion to move onto the next index/question
+    loadQuiz();     // moves on to next question
+});
