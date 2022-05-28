@@ -48,6 +48,10 @@ ul li {
     padding: 0.5rem 0;
 }
 
+ul li label {
+    cursor: pointer;
+}
+
 button {
     display: flex;
     align-items: center;
@@ -66,4 +70,10 @@ button {
 
 button:hover {
     background-color: #3571a6;     /* change background color when mouse cursor hovers over button */
+}
+ #replay-button{
+    padding: 1rem 0rem;
+    border-radius: 10px;
+    width: 200px;
+    margin: 0 auto;     /* Setting horizontal margins to auto is a very common way to center elements that don't occupy the full available horizontal space. */
 }
