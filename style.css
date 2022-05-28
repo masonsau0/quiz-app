@@ -37,6 +37,12 @@ body {
     padding: 2rem 4rem;
 }
 
+#question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 ul {
     list-style-type: none;     /* removes bullet points from list items */
     padding: 0;
