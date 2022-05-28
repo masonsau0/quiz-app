@@ -34,13 +34,18 @@ body {
 }
 
 .quiz-header {
-    padding: 2rem;
+    padding: 2rem 4rem;
 }
 
 ul {
     list-style-type: none;     /* removes bullet points from list items */
     padding: 0;
     margin: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
 }
 
 button {
@@ -53,9 +58,10 @@ button {
     background-color: #3d85c6;
     color: white;
     width: 100%;     /* stretches button to 100% of available width */
-    padding: 1.5rem;
+    padding: 1.8rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    cursor: pointer;     /* changes cursor to a pointer when hovered over button */
 }
 
 button:hover {
